@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+1. Why do you need to learn Linux?
+	Most of the Web Servers use Linux. So if we use Linux in our Local System
+	then we already will have a good set of Linux Operating skill that will 
+	help us to use Linux in Servers too.
+
+2. What are the things you need to know while learning Linux?
+	There is nothing specific. All you need to know how to do a specific thing
+	that is needed for your goal. Once you learn it from any source write it 
+	down in documentaion. Linux skills will gradually grow up with time. That 
+	is the right way to learn different things in Linux.
+
+3. What is all about adding an Apt Repository, then Updating Apt, then 
+installing something else?
+
+4. How to perform Install and Uninstall Operations in Linux?
+
+5. How to use File System in Linux?
+
+6. 

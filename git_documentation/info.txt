@@ -1,0 +1,76 @@
+-------------------------------------------------------------------------------
+My Github Access Token: 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
+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
+used for accessing Github, instead of the Password over https protocol.
+
+What are different things to know in Git?
+	For running Git for yourself in Local - 
+	1. How to install Git
+	2. How to intitiate a Git Repository
+	3. How to set Git Credentials
+	4. How to Initiate a Git Repository
+	5. How to create a Development branch
+	6. How to commit to a Branch
+	7. How to Merge the Development Branch with the Master Branch
+	8. How to Resolve Git Conflitcts.
+	9. How to go to any Branch and a previous Snapshoot of your project
+	For running Git with a Distributed system - 
+	10. How to push code to Github
+	11. How to receive Push Requests
+	12. How to create a Private or Public online Repository
+	13. How to do Open Source Contribution
+
+
+1. What is the right way to learn Git and Github?
+	First learn all the funcitonality of Git in a Local Machine. Then go for
+	learning Github for Cloud Git service.
+
+2. How to install Git?
+	'sudo apt install git'
+	'git --version'
+
+3. How to set Git Credentials?
+	'git config --global user.name 'Sai-Nilayam''
+	'git config --global user.email 'sainilayamsahu777@gmail.com''
+	'git config --global user.name'
+	'git config --global user.name'
+
+4. How to initiate a Git repository?
+	'git init'
+
+5. How to Stage and Commit files in Git?
+	To add files to the Staging area, type command - 'git add .'
+	To Commit type command - 'git commit -m 'message''
+
+6. How to see all the Commit logs in Git?
+	'git log'
+
+6. How to move to a previous snapshoot in Git?
+	'git checkout 'hash_code''
+
+7. How to move back to the latest?
+	'git checkout master'
+
+8. Can i move up to any any snapshoot in Git?
+	No, if you wanna go up then you need to go to the latest and then move
+	down to the snapshoot you want. 
+
+9. How to create a new brach in Git?
+	'git branch 'branch name''
+	'git branch'
+
+10. How merge two different braches?\
+	Go a specific branch and type command 'git merge 'another_brach_name''
+
+11. Sould I need to learn all the things in Git and how to tackle them?
+	No, in general in a big project there are seniours to handle all these
+	things. All you need to do is to just pull the codes and develop the 
+	project then push your code to the remote git repository. That's it. 
+
+12. What are all the different things to know in Git?
+	1. How exaclty Merging works in Git and how to manage Conflicts.
+	2. How to Push-pull codes in remote Git Repository.
+	3. How to manage different kind of accessibility in Remote Git Repository.
+	That's it.
+
+13. How exactly Git architecture is works?

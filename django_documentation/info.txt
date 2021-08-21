@@ -1,0 +1,96 @@
+-------------------------------------------------------------------------------
+1. Why do we need to use Django?
+	Whatever the programme we create, we need that programme to be usable by
+	all the people across the world. So for the seek of this, we need to deploy 
+	our programme in a Cloud Sever so that anyone can access and use our
+	programme by using proper APIs. Mostly user would use a HTTP protocol to 
+	access our programme and call to different URL's of our system. In that case
+	it is our duty to accept user's query and provide them with the desired 
+	output by using our programme. Accepting user's query and replying back with
+	proper response could be done using Django Framework made in Python. Django 
+	can accept user request to a specific URL of our system and provide that 
+	request with a specific respose.
+
+2. What are the different thing we need to Learn in Django?
+	1. How to create different URLs?
+	2. How to accept user's query to a specific URL and provide response to 
+	that query?
+	3. How to accept user's query when it also sends a file with it?
+	4. How to send a file as a respose to the user?
+	5. How to deploy a Djanog app with a production server like apache in our
+	cloud system
+
+3. What are the different steps to initialize a Django app?
+	1. Check Django Version - Activate your Virtual Evn. and type 'django-admin 
+	--version'.
+	2. Start a new Project with a pre written codes - 'django-admin startproject 
+	test_site'.
+	3. Test whether everything worked correctly or not - go to test_site folder - 
+	'python mange.py runserver'. While changing codes sometimes you need to restart
+	the server exiplisitly.
+	4. Create a new Django App - 'python manage.py startapp test_app'.
+	5. Open the 'views.py' file from the newly created App folder. Import 
+	HttpResponse and define a function 'index' and return a HttpResponse object.
+	6. Create a file in the same directory named as 'urls.py' and create a listing
+	of all the URL's associated with the definition of the 'view.py' file with 
+	proper codes.
+	7. Now link this 'urls.py' file to the main project's 'urls.py' file with 
+	proper codes.
+	8. Now you are ready to go with a self-made fucntional django app.
+
+4. How to use Requst Response strategy in Django?
+	For the answer of this question see files at the following path.
+	'views.py' - '/home/sai-nilayam/Desktop/dev/project_1/django_documentation/django_app/test_site/test_app'
+	'request_script.py' - '/home/sai-nilayam/Desktop/dev/project_1/django_documentation'
+
+5. How to accept a file from a requst and return a file in a requst?
+	To accept a file follow the following step.
+		1.First disable the CSRF protection from 'test_site' 'settings.py'. Because
+		file uploading goes only via POST request. If you don't disable it, it will 
+		require CSRF Token that is not possible to impliment form requsting from a 
+		outside script.
+		2. Requst to the server using 'request' python module with a 'file' parameter 
+		attached to it.
+		3. Accept the 'file' parameter at 'view.py' and save it to the desired path.
+		See codes for illustration.
+
+	To return a file, follow the following steps.
+		1. In 'views.py' import 'FileResponse'
+		2. Open a file from it's path in 'rb' mode.
+		3. Create a 'FileRespose' Object.
+		4. Return the 'File Respose' Objecct.
+		5. In 'request_script.py' accept that response content and write it to a file to 
+		save it.
+		For a better illustration look at 'request_script.py' for a better understanding
+		where 'requst' library is used for Requesting using a Python Script.
+
+6. How to configure django website with a production level server Apache and server it 
+via Apache?
+	Deploying a djanog application is very tough. There are a lot of erros you may 
+	encounter. So you always need to be patient.
+
+	1. Install Apache - 'sudo apt install apache2', 'apache2 -v'
+	2. Go to Firefox open 'localhost' url. It should be running.
+	3. Now go to the folder '/etc/apache2/sites-availabe/'
+	4. Create a new file with a '.conf' extenstion and add the following Configuration
+	settings(text) to it. See file 'test_site.conf'.
+	5. Now disable the default Configuration file - 'sudo a2dissite 000-default.conf'.
+	6. Now enable our newly created Configuration file - 'sudo a2ensite test_site.conf'.
+	7. Now go to the 'wsgi.py' file in your django project. Write at the top of it the following
+	lines.
+		import sys
+		sys.path.insert(
+    		0, '/home/sai-nilayam/personal/dev/venvs/tf/lib/python3.7/site-packages')
+    	That is add the path to your Vertual Environment's site-package folder to the 
+    	sys.path. Append it at the first path.
+
+    Doing this will make the libapache2-mod-wsgi-py3 find the way to deal with your virtual 
+    Environment. 
+
+    8. Now install mod-wsgi - 'sudo apt install libapache2-mod-wsgi-py3'.
+    9. Now restart Apache2 server by Restarting the apache2 service - 'sudo systemctl reload apache2'.
+    10. Now you are done. Send a request to the server with a right URL and the Apache server will 
+    accept the request and resposnd back by communication thorugh our Django app.
+
+7. How to Deploy Django app at a Remove Server?
+
