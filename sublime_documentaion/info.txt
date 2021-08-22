@@ -1,0 +1,42 @@
+1. How to set up Sublime Developing Environment for Python? 
+	1. Install Sublime
+	Refer Sublime Test official instruction guide 
+	available at their official website.
+
+	2. Set "font_size" to 11. Use a ruler at 79 character as per PEP8 syntax
+	by setting "rulers": [79]. 
+
+	3. Install 'Package Control'
+	Open Command Pallate by 'Ctrl + Shift + p' and Install 'Package Control'
+
+	4. Install Color Scheme
+	Install 'predawn' color theme Apply it by 'Preferences->Select Color 
+	Scheme'.
+
+	5.	Install a package for Python for Supporting Python Development. 
+	Install 'Anaconda' using Package Control. Navigate to 'Preferences->
+	Package Settings->Anaconda->User Settings'. Paste the following JSON 
+	settings.
+		{
+		    "auto_formatting": true,
+		    "autoformat_ignore":
+		    [
+		    ],
+		    "pep8_ignore":
+		    [
+		        "E501"
+		    ],
+		    "anaconda_linter_underlines": false,
+		    "anaconda_linter_mark_style": "none",
+		    "display_signatures": false,
+		    "disable_anaconda_completion": true,
+		    "python_interpreter": "/home/sai-nilayam/personal/dev/venvs/tf/bin/python"
+		}
+
+	6.	Create a Build System to use a Python Virtual Environment in Sublime Environment. 
+	Go to 'Tools->Build System->New Build System' and Paste the following settings.
+		{
+		    "cmd": ["/home/sai-nilayam/personal/dev/venvs/tf/bin/python3", "-u", "$file"],
+		    "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+		    "quiet": true
+		}

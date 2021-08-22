@@ -10,11 +10,38 @@
 	down in documentaion. Linux skills will gradually grow up with time. That 
 	is the right way to learn different things in Linux.
 
-3. What is all about adding an Apt Repository, then Updating Apt, then 
-installing something else?
+3. How to perform Install and Uninstall Operations in Linux?
+	There are multiple ways to install a Programme in Linux(Ubuntu).
+		1. 'sudo apt update' - Updates the list of available Packages to the Latest version.
+		'sudo apt install package_name' - Install a package directly from internet.
+		If a package is not availabe in default Ubuntu Repository sets, then you could also add a 
+		'Private Package Repository' (ppa) to apt. And then perform 'sudo apt install package name.'
+		2. Download a '.deb' file and navigate to that directory. Type 'sudo apt install ./package_name'
 
-4. How to perform Install and Uninstall Operations in Linux?
+		To Remove a Programme from Linux(Ubuntu) - 'sudo apt remove package_name'
 
-5. How to use File System in Linux?
 
-6. 
+4. How to use File System in Linux?
+	1. Show present working Directory - 'pwd'
+	2. List all element in a Directory - 'ls' with 'flags'
+	3. Make a new Directory - 'mkdir directory_name'
+	4. Make a new File - 'touch file_name_with extension'
+	5. Remove a Directory - 'rm -rf directory_name'
+	6. Remove a File - 'rm file_name'
+	7. Copy a Directory to another location - 'cp -r directory_name path_to_where_to_be_copied'
+	8. Copy a File - 'cp file_name path_to_where_to_be_copied'
+	9. Renaming a Directory/File - 'mv directory/file_name to directory/file_name_to_what_to_get_renamed'
+	9. Change Permissions for Directory of File - 'sudo chmod 775 folder/file_name'
+
+5. What is all about SSH?
+	SSH stands for Secure Shell. You need to generate two keys in your local
+	machine called Private and Public keys. The Private key is gonna be stored in
+	your Local Machine. And you need to update the Public key in your remote 
+	machine.
+
+	1. Generate a Key Pair - 'ssh-keygen -t rsa -b 4096''
+	Pass Phrase: ssh_key (This is gonna be worked as the Password whenever you will
+	try to use your Private key.)
+	2. Go to the folder home/user-name/.ssh/ and Vim into the Public key. Copy it
+	and update it to the Remote Machine. Apply proper Permissions. You are done.
+	3. ssh into that Remote Machine - 'ssh user_name@ip_adress'
