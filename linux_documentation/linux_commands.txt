@@ -45,3 +45,18 @@
 	2. Go to the folder home/user-name/.ssh/ and Vim into the Public key. Copy it
 	and update it to the Remote Machine. Apply proper Permissions. You are done.
 	3. ssh into that Remote Machine - 'ssh user_name@ip_adress'
+
+6. How to use a Well Featured Terminal in Linux?
+	All you need to do is to edit some of the hidden files available in your 
+	home folder namely '.bashrc' file and may be a few more to edit the way 
+	your Terminal is working. In fact there are already pre-edited 
+	configurations are available on internet. So all you need to do is to 
+	download or clone a Repo and choose files that are necessary for you from 
+	that Repo and copy paste them in your Home folder of your machine. Before 
+	pasting these back up any of files with these name if pre-exist in your 
+	Home directory to a folder 'dot_files'.
+
+	Here's a set of practical example.
+	Git Repository Link: https://github.com/mathiasbynens/dotfiles
+	From the above Repos copy the files named .bashrc, .bash_profile, 
+	.bash_prompt to your Home folder. 
