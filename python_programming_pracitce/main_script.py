@@ -8,12 +8,8 @@
 7. List Comprehension
 8. Looping 2 - Find the Runner-Up Score!
 
-9.  
+9.   
 
 """
 
-# %%
-
-
-# %%
 

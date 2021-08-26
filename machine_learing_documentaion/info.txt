@@ -1,0 +1,64 @@
+Here I am gonna write out all about Machine Learning that I have studied so 
+far.
+
+1. What is Machine Learning?
+	Machine Learning is a Technique to provide computers the ability to learn 
+	different things. We do this by writing Sophisticated Mathematical 
+	Algorithms using a Programming Langueage so that computers can execute 
+	those Learing Algorithms and learn different kind of things by themselves.
+
+2. What is the Wide View of Machine Learning?
+	Anything a Human can learn, there exist an algorithm by which a Machine
+	can also learn the same. So anything a Human can Learn, learing that 
+	thing falls in domain of Machine Learning.
+
+	So, Human can Learn if he is provided with some examples. Computers can do
+	the same. This is called Supervised Learning. Here all we need to do is to 
+	Learn a Mapping Funciton that maps from X -> y. 
+
+	Human can also Learn Patterns in Tensors, that is purely depeands on 
+	themselves. So we also have Algorithms that can find patterns in Tensors
+	by themselves. This is called Unsupervised Learning.
+
+	Finally Human can take decission in way that he would achive something that 
+	is fruitful to it. That's why we have Algorithms by which a Computer can 
+	take decissions in way that it would achieve something that is fruitful to
+	it. This is called Reinforcement Learning. 
+
+3. What is the use of Supervised Learning?
+	This kind of ML is used to train computers so that they will replace humen.
+
+4. What is the use of Unsupervised Learning?
+	Actually in case we wanna learn about a Tensor that is large, we often feel
+	that we don't have enough computational power by our brain. In order to 
+	learn that giant Tensor we use a computer to do that computation. All we 
+	will get what we want. But just we gate computer to do that expensive 
+	computation and that's how a computer performing an Unsupervised Lerning
+	is for actually we to know the pattern in data and the way we want.
+
+5. What is the use of Reinforcement Learning?
+	When we don't know how to achieve something, all we can do to set some 
+	reward for a computer to achieve the samething so that now a computer will
+	automatically find a way to achive that. Once the computer achieve that
+	now the way it will help us is by the analogy of 'Follow the footprints of 
+	great men.' We will follow the foot print of the computers. So now all the 
+	headaches that we would have faced to achive a goal, now a computer would 
+	take care of all these things. 
+
+6. Now what I have studies so far so as to get a job in ML?
+	Mostly what right now most of the companies are doing is they are making
+	Supervised Learnt ML models so thay could replace Human with better 
+	performance. So I have studied a bunch of Supervised ML Techniques. 
+	All that I have studied is that how to define a funciton that maps from
+	X to y (X -> y) and then optimize it. How better I can do this is how good
+	I am in ML.
+
+	2ndly The other thing Companies are doing is using Computers to take their
+	Computational Advantage to figure out the big realword Tensors. So I have
+	studied a bunch of Unsupervised Learning so. All I know how to apply these
+	algorithms to Data and when to use what.
+
+	With this knowledge and the Skills that I gained from a few of practical 
+	Projects that I made, I can help Companies to carry out their taks. Hence 
+	I will get a job. 
+

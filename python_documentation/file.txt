@@ -1,0 +1,6 @@
+This is a piece of text to be written on the file.
+This is a newline. 
+This is another new line.
+This is a piece of text to be written on the file.
+This is a newline. 
+This is another new line.
