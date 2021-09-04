@@ -48,6 +48,8 @@ Never remove the default Python from Linux(Ubuntu). Add Deadsneak PPA
 Repository to apt and perform 'sudo apt install python3.x'. Then install 
 Virtualenv by 'sudo apt install virtualev'. Now call the Virtualenv using 
 Python version that you want - 'python3.x -m virtualenv virtualenv_name'.
+**It is Recommended that you always use the dafault Python version of your 
+Linux operating system for a Bug free implementaion 
 
 # Important Key Words
 ---------------------

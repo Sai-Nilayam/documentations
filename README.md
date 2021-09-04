@@ -11,3 +11,4 @@ The Documentaions included for
 4. Sublime
 5. Django
 6. Python Programming knowledge from Hackerrack
+7. Machine Learning Documentation

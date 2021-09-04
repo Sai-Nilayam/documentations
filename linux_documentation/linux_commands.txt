@@ -1,8 +1,16 @@
 -------------------------------------------------------------------------------
 1. Why do you need to learn Linux?
-	Most of the Web Servers use Linux. So if we use Linux in our Local System
+	1. Most of the Web Servers use Linux. So if we use Linux in our Local System
 	then we already will have a good set of Linux Operating skill that will 
 	help us to use Linux in Servers too.
+	2. Installation in Linux is super simple using 'apt'.
+	3. Linux is more optimized for Security from external threats as compared 
+	to any other OS.
+	4. Linux runs Faster.
+	5. Linux is more flexible in terms of Automation.
+	6. Linux is more flexible in terms of Customization.
+	7. Linux is free.
+	8. Linux shows usuful Error Messages.
 
 2. What are the things you need to know while learning Linux?
 	There is nothing specific. All you need to know how to do a specific thing
@@ -19,7 +27,6 @@
 		2. Download a '.deb' file and navigate to that directory. Type 'sudo apt install ./package_name'
 
 		To Remove a Programme from Linux(Ubuntu) - 'sudo apt remove package_name'
-
 
 4. How to use File System in Linux?
 	1. Show present working Directory - 'pwd'
@@ -59,4 +66,9 @@
 	Here's a set of practical example.
 	Git Repository Link: https://github.com/mathiasbynens/dotfiles
 	From the above Repos copy the files named .bashrc, .bash_profile, 
-	.bash_prompt to your Home folder. 
+	.bash_prompt to your Home folder.
+
+7. What is the right way to use a Virtual Env for Python in Linux?
+	The right way is to install Virtual Env package by the command - 
+	'sudo apt install python3.7 venv'
+	 

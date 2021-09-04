@@ -1,0 +1,14 @@
+This directory is dedicated to learn and document all of the learnings of 
+tensorflow.
+
+1. Why do we need to learn Tensorflow explicitly?
+	Tensorflow provides simpler ways to use Complex Mathematical Algorithms. 
+	But in order to implement a varaity of Algorithms we need to know how 
+	exactly to impliment those using tensorflow. The only way to understand 
+	this is by learning tensorflow basics from scratch.
+
+2. What is the right way to code tensorflow?
+	The right way to code tensorflow is by using a Jupyter Notebook. As 
+	tensorflow is mostly used in Research oriented works.
+
+ 

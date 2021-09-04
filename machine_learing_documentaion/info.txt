@@ -62,3 +62,14 @@ far.
 	Projects that I made, I can help Companies to carry out their taks. Hence 
 	I will get a job. 
 
+7. What is the difference between Machine Learing, Deep Learning, Artificial
+Intelligence, Data Science.
+	While answering this question most often people don't focus on the 
+	difference part between these fields. The reason is that if you are in one
+	field then you only need to know all about that field and not the outer 
+	things. As I am a Machine Learning Engineer, all I know about Machine 
+	Learning and Deep Learing.
+
+	If you are using a Neural Network in any means that means you are doing
+	Deep Learning. Else that is not Deep Learning and it's just Machine 
+	Learning.

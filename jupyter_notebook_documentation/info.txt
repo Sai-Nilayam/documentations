@@ -1,0 +1,12 @@
+1. Why do we need to use Jupyter Notebook?
+	The jupyter Notebook allows us to execute codes cell by cell and see the 
+	output of each cell below it and eventually become a notebook that 
+	separates the logic and the output of the analysis and be a good 
+	story telling documentation at the end that is exaclty what a Machine 
+	Learing Engineer want.
+
+2. How to delete all the variables from a Jupyer Notebook environment?
+	In any cell write '%reset' and run it. All the variables in the Jupyter
+	Environment will be flushed. 
+
+3. 
