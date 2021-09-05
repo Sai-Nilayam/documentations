@@ -76,7 +76,14 @@ via Apache?
 	settings(text) to it. See file 'test_site.conf'.
 	5. Now disable the default Configuration file - 'sudo a2dissite 000-default.conf'.
 	6. Now enable our newly created Configuration file - 'sudo a2ensite test_site.conf'.
-	7. Now go to the 'wsgi.py' file in your django project. Write at the top of it the following
+	7. **Never do this steps. Rather you create the Virtual Env with the defalut 
+	Python Version of your Linux system. Because mod-wsgi is installed and is 
+	compiled for the defalut Python Version availabe in your system.
+
+	The following way creates problem while importing a few Modules in 
+	'views.py' file.
+
+	Now go to the 'wsgi.py' file in your django project. Write at the top of it the following
 	lines.
 		import sys
 		sys.path.insert(
@@ -92,5 +99,39 @@ via Apache?
     10. Now you are done. Send a request to the server with a right URL and the Apache server will 
     accept the request and resposnd back by communication thorugh our Django app.
 
-7. How to Deploy Django app at a Remove Server?
+7. How to Deploy Django app at a Remote Server?
+	1. Take a server at any cloud service. 'Linode' is the best choice. 
+	2. Add your 'SSH Key' while creating your 'Linode' (Computer).
+	3. Log in to that Remote Machine using SSH from your Local Machine.
+	4. Do Updates - 'sudo apt update', 'sudo apt upgrade'.
+	5. Set a new Host Name - 'hostnamectl set-hostname linux-server'. 
+	'Underscore' is not allowed. Use 'Dash' instead. Set the Host Name in Host 
+	File by the IP Address of your server and your Host Name that you have just
+	assigned to it. Edit the file '/etc/hosts'
+	6. Add a new Limited User - 'adduser sai-nilayam'. Give User the power to 
+	use 'sudo' commands - 'adduser sai-nilayam sudu'. Log In as the new User - 
+	'ssh user_name@ip_address'.
+	7. Set up SSH Key for the newly created User. Create a '.ssh' folder in the 
+	home folder of the User - 'mkdir -p ~/.ssh'. Copy the Public Key from your
+	Local Machine and paste it to a folder in the home directory of the User
+	in the Server 'scp ~/.ssh/id_rsa.pub sai-nilayam@172.105.47.76:~/.ssh/authorized_keys'.
+	You don't need File Extension in Linux. Apply appropriate Permissions to the .ssh and 
+	authorized_keys direcotries - 'sudo chmod 700 ~/.ssh/', 'sudo chmod 600 ~/.ssh/*' (Applying
+	Permissions to all the files of the Directory.). Done.
+	8. *Optional - You might change setting to disallow Password Authentiation 
+	and Root Login to your Server. 
+	9. *Optional - Install an Uncomplicated Firewall - 'ufw' - 'sudo apt install 
+	ufw'. Then Allow all outgoings, deny all incomings, allow SSH, allow port 8000. 
+	Then Enable all the rules. 
+	10. Take your Django App to your Remote Server. The best way to do this by 
+	Pulling the Project from a Remote Git Repository. 
+	11. Create your Virtualenv. Now install all the Packages in your Virtulal Env.
+	If you are planning to install 'Tensorflow', then it is important to take a 
+	powerfull server at least 4 GB of Ram from Linode.
+	12. Now Follow up all the steps to configure Django App with Apache2 server.
+	13. This time at the 'settings.py' of your Django App, at the allowed hosts,
+	add the 'IP Adress of your Server', 'Domain Name of your Website', 
+	'www.Domain Name of your Website'. 
+	Done.
+
 
