@@ -36,12 +36,12 @@ upto a Module.)
 
 5. We need to know all the Python's Key Words.
 
-6. How Official Packageing works in Python? - Cleared Where is the limit at 
+6. How Official Packageing works in Python? - Cleared - Where is the limit at 
 where the interpreter starts? - Doubt
 
-7. How terms like Library, Package, module, script fits in a hierachy?
-Library -> Package -> Module -> Script. The usage relies on the concept of
-how Importing works in Python.
+7. How terms like Library, Package, module, script fits in a hierachy? 
+Framework -> Library -> Package -> Module -> Script. The usage relies on the 
+concept of how Importing works in Python.
 
 8. How to create a Virtual Environment with a specific version?
 Never remove the default Python from Linux(Ubuntu). Add Deadsneak PPA 
@@ -69,6 +69,12 @@ Linux operating system for a Bug free implementaion
 13. raise
 14. with - Doubt
 15. async, await, nonlocal - Doubt
+
+Questions
+---------
+1. Is there a way to Inherit from multiple Classes simulteniously? How to use 
+the '__init__()' function in that case? - Doubt. 
+
 """
                                                                                   
 print('This is the main_script of the programme.', end='\n\n')

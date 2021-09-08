@@ -66,4 +66,23 @@ What are different things to know in Git?
 	things. All you need to do is to just pull the codes and develop the 
 	project then push your code to the remote git repository. That's it. 
 
-11. How exactly Git architecture works?
+11. How exactly Git architecture works? - Doubt.
+
+12. How to remove a 'Commit' in Git?
+	To remove a 'Commit' in Git, you need to use the command 'git reset --hard 
+	commit_id'. This will remove all the commits after that and bring you back 
+	to that commit is past. 
+
+13. Why you might need to use Git Ignore? How to use it? 
+	1. If there is a very large file, You might not want to send that file to 
+	the Remote Git Repository.
+	2. If you have some directories that is actually not a part of the Project,
+	but you use them for your own convenience, then you might not want to send
+	to Remote Respository.
+	3. If a file contains some Sensitive Informations, then you might not want
+	to push it to the Remote Repository. 
+
+	To Ignore those Directories, create a file named as '.gitignore' where the 
+	'.git' directory is. Now write all the file names in that line by line, that
+	you want to ignore. If you want to ignore an entire folder, then in the 
+	'.gitignore' file mention the folder as 'folder_name/'.
