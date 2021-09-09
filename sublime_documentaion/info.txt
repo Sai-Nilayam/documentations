@@ -28,8 +28,13 @@
 		    ],
 		    "anaconda_linter_underlines": false,
 		    "anaconda_linter_mark_style": "none",
-		    "display_signatures": false,
-		    "disable_anaconda_completion": true,
+
+
+    		// We are disabling these two settings provided by Corey Schafer as we want
+    		// Anaconda to offer it's Auto Complition feature with Python Libraries (Line-17) as 
+    		// well as show Ineditor Function and Class Descriptions(Line-16).
+    		// "display_signatures": false,
+    		// "disable_anaconda_completion": true,
 		    "python_interpreter": "/home/sai-nilayam/personal/dev/venvs/tf/bin/python"
 		}
 
