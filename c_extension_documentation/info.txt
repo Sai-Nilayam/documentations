@@ -1,0 +1,19 @@
+Here we are going to make a C Extension for Python and import it to Python and use it.
+We are going to document all the steps included. 
+
+Steps to use C files in Python
+------------------------------
+1. Install 'gcc' - A C Compiler.
+2. Write a C file with '.c' extension and write some functions in it.
+3. Make a Shared Object file using gcc from your '.c' file, by using -
+gcc -shared test.c -o test_shared.out 
+4. In the Python file import 'CDLL' from 'ctype' module.
+5. Now do - cfile_test = CDLL(./'the C file name')
+6. Now do - cfile_test.function_name(arguments) to use the functions those are 
+written in the C file.
+
+How to run a C file
+-------------------
+1. Write the C file.
+2. Create an Object file using gcc - gcc test.c -o test.out.
+3. Write in terminal, ./test.out and the file will run.
